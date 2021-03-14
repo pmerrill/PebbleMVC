@@ -21,7 +21,7 @@ Look for the following on line 4. This is what you should change.
 Also, be sure to enter your **database credentials**, **site name**, and **URL root** in the **app/config/config.php** file.
 <br/>
 
-These constants are what you should be changing.
+The value of these constants are what you should be changing.
 <br/>
 
 ```php
