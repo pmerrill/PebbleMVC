@@ -8,6 +8,12 @@ I'm tinkering with this and plan to build it out. A more detaild explanation of 
 If you're going to use this be sure to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
 <br/>
 
+Look for the following on line 4. This is what you must change.
+<br/>
+
+`RewriteBase /PebbleMVC/public`
+<br/>
+
 Also, be sure to enter your **database credentials**, **site name**, and **root** in the **app/config/config.php** file.
 <br/>
 
