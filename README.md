@@ -71,7 +71,7 @@ Since the model was added to the index method you'll want to open up the **app/v
 <br/>
 
 ```php
-<?php echo json_encode($data['posts'];); ?>
+<?php echo json_encode($data['posts']); ?>
 ```
 <br/>
 
