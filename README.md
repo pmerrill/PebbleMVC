@@ -8,17 +8,17 @@ A lightweight object oriented PHP MVC. The core code is based on the MVC created
 Feel free to get in touch with me [@PeteMerrill](twitter.com/petemerrill) on Twitter if you want to talk about this project a little more.
 <br/>
 
-## Getting started:
-If you're going to use this be sure to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
+## Getting Started
+The first thing you'll want to do is to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
 <br/>
 
-Look for the following on line 4. This is what you must change.
+Look for the following on line 4. This is what you should change.
 <br/>
 
 `RewriteBase /PebbleMVC/public`
 <br/>
 
-Also, be sure to enter your **database credentials**, **site name**, and **root** in the **app/config/config.php** file.
+Also, be sure to enter your **database credentials**, **site name**, and **URL root** in the **app/config/config.php** file.
 <br/>
 
 ## To create a model:
