@@ -21,6 +21,24 @@ Look for the following on line 4. This is what you should change.
 Also, be sure to enter your **database credentials**, **site name**, and **URL root** in the **app/config/config.php** file.
 <br/>
 
+These constants are what you should be changing.
+<br/>
+
+```php
+// URL Root
+define('URLROOT', '_YOUR_URL_');
+
+// Site Name
+define('SITENAME', '_YOUR_SITENAME_');
+
+// Database Params
+define('DB_HOST', 'localhost');
+define('DB_USER', '_YOUR_USER');
+define('DB_PASS', '_YOUR_PASSWORD_');
+define('DB_NAME', '_YOUR_DBNAME_');
+```
+<br/>
+
 ## Create a Model
 Create a new file in the **app/models** folder. In this example, create a file called **Post.php**.
 <br/>
