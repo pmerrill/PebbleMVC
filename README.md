@@ -2,7 +2,10 @@
 A lightweight object oriented PHP MVC. The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding how the core components of this repository were put together.
 <br/>
 
-I'm tinkering with this and plan to build it out. A more detaild explanation of how this works will be added a little later.
+**fyi**, I'm tinkering with this. It's a work-in-progress and I plan to build it out a little more.
+<br/>
+
+Feel free to get in touch with me [@PeteMerrill](twitter.com/petemerrill) on Twitter if you want to talk about this project a little more.
 <br/>
 
 If you're going to use this be sure to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
