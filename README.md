@@ -1,1 +1,1 @@
-A lightweight object oriented PHP MVC. Based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/).
+A lightweight object oriented PHP MVC. The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I'm tinkering with this and plan to build it out. An explanation of how this works will be added a little later.
