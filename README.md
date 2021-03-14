@@ -57,7 +57,7 @@ public function __construct(){
 }
 
 public function index(){
-    $posts = $this->postModel->getPosts();
+    $posts = $this->postModel->getFromTable();
     $data = [
         'title' => 'Post Viewer',
         'posts' => $posts
@@ -66,3 +66,13 @@ public function index(){
     $this->view('pages/index', $data);
 }
 ```
+
+Since the model was added to the index method you'll want to open up the **app/views/pages/index.php** file and enter the following code. This will echo out the contents of the posts object.
+<br/>
+
+```php
+<?php echo json_encode($data['posts'];); ?>
+```
+<br/>
+
+This was just an example and should give you an idea how to add your own models to this MVC.
