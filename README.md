@@ -1,1 +1,1 @@
-Just a lightweight object oriented PHP MVC.
+A lightweight object oriented PHP MVC.
