@@ -2,13 +2,17 @@
     class Pages extends Controller {
         public function __construct(){
             //echo 'Pages loaded';
+            $this->postModel = $this->model('Post');
         }
 
         // Default method
         // Index for call_user_func_array
         public function index(){
+            $posts = $this->postModel->getPosts();
+            
             $data = [
-                'title' => 'Welcome'
+                'title' => 'Welcome',
+                'posts' => $posts
             ];
             
             // Pass in file name and optional array of data
