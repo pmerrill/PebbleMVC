@@ -5,7 +5,7 @@ A lightweight object oriented PHP MVC. The core code is based on the MVC created
 I'm tinkering with this and plan to build it out. A more detaild explanation of how this works will be added a little later.
 <br/>
 
-If you're going to use this be sure to enter the correct path to your project in the **.htaccess file** (`RewriteBase`) in the root directory.
+If you're going to use this be sure to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
 <br/>
 
 Also, be sure to enter your **database credentials**, **site name**, and **root** in the **app/config/config.php** file.
