@@ -1,5 +1,5 @@
 # PebbleMVC
-A lightweight object oriented PHP MVC. The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/).
+A lightweight object oriented PHP MVC. The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding how the core components of this repository were put together.
 <br/>
 
 I'm tinkering with this and plan to build it out. A more detaild explanation of how this works will be added a little later.
