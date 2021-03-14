@@ -10,14 +10,6 @@
     // Site Name
     define('SITENAME', '_YOUR_SITENAME_');
 
-    // CSS Version
-     // Cache-busting technique
-    define('CSS_VERSION', 1);
-
-    // JS Version
-     // Cache-busting technique
-    define('JS_VERSION', 1);
-
     // Database Params
     define('DB_HOST', 'localhost');
     define('DB_USER', '_YOUR_USER');
