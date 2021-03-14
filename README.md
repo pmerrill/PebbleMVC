@@ -21,14 +21,14 @@ Look for the following on line 4. This is what you should change.
 Also, be sure to enter your **database credentials**, **site name**, and **URL root** in the **app/config/config.php** file.
 <br/>
 
-## To create a model:
-Create a new file in the **app/models** folder. In this example, create s file called **Post.php**.
+## Create a Model
+Create a new file in the **app/models** folder. In this example, create a file called **Post.php**.
 <br/>
 
 Be sure to capitalize the first letter of the file and try not to pluralize the name. It's best to pluralize controllers while leaving models singular.
 <br/>
 
-Feel free to copy and paste the following code into the new Post.php file to create a basic model.
+Feel free to copy and paste the following code into the new **Post.php** file to create a basic model.
 <br/>
 
 ```php
