@@ -85,7 +85,7 @@ public function index(){
 }
 ```
 
-Since the model was added to the index method you'll want to open up the **app/views/pages/index.php** file and enter the following code. This will echo out the contents of the posts object.
+Since the model was added to the index method you'll want to open up the **app/views/pages/index.php** file and enter the following code. This will echo out the contents of the posts array as a JSON object.
 <br/>
 
 ```php
