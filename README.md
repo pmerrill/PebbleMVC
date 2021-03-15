@@ -15,13 +15,29 @@ Feel free to get in touch with me [@PeteMerrill](https://twitter.com/petemerrill
 ## Screenshots
 ![Home page](https://i.ibb.co/XZWS0J0/Screenshot-2021-03-14-Pebble-MVC.png)
 <br/>
-Home page
+Home page view.
 <br/>
 
 ![Create Account](https://i.ibb.co/d4GVYBm/Screenshot-2021-03-14-Pebble-MVC-1.png)
+<br/>
+Create an account view.
+<br/>
+
 ![Log In](https://i.ibb.co/hLwDkCy/Screenshot-2021-03-14-Pebble-MVC-2.png)
+<br/>
+Log in view.
+<br/>
+
 ![Account](https://i.ibb.co/kH56jtG/Screenshot-2021-03-14-Pebble-MVC-4.png)
+<br/>
+Basic account view.
+<br/>
+
 ![About](https://i.ibb.co/B4Yx4Zw/Screenshot-2021-03-14-Pebble-MVC-3.png)
+<br/>
+Static page view.
+<br/>
+
 
 ## Getting Started
 The first thing you'll want to do is to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
