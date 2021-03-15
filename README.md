@@ -5,7 +5,11 @@ PebbleMVC is a lightweight object-oriented PHP MVC with basic user registration 
 ## Template
 The default template uses Bootstrap 5 and Font Awesome icons.
 <br/>
-Simply remove Bootstrap and Font Awesome from the `app/views/inc/header.php` and `app/views/inc/footer.php` files. You'll also want to take a look at the navigation system in the `app/views/inc/navbar.php` file. You'll have to come up with something different if you're not going to use Bootstrap.
+
+Simply remove Bootstrap and Font Awesome from the `app/views/inc/header.php` and `app/views/inc/footer.php` files.
+<br/>
+
+You'll also want to take a look at the navigation system in the `app/views/inc/navbar.php` file. You'll have to come up with something different if you're not going to use Bootstrap.
 <br/>
 
 ## Origin
