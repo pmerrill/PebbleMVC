@@ -24,19 +24,23 @@
         }
 
         // Insert a new user into the database
-        public function userRegister($name, $email, $password){
+        public function register($data){
             // Query that inserts the new user
             $this->db->query('INSERT INTO users(name, email, password) VALUES(:name, :email, :password)');
 
-            // Bind the value to the query
-            $this->db->bind(':name', $name);
-            $this->db->bind(':email', $email);
-            $this->db->bind(':password', $password);
+            // Bind the values
+            $this->db->bind(':name', $data['name']);
+            $this->db->bind(':email', $data['email']);
+            $this->db->bind(':password', $data['password']);
 
             // Execute and insert the user
-            $row = $this->db->execute();
-
-            // Success
-            return true;
+            if($this->db->execute()) {
+                // Success
+                return true;
+            } else {
+                // Failed
+                return false;
+            }
         }
+
     }

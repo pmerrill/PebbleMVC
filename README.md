@@ -3,7 +3,7 @@ PebbleMVC is a lightweight object-oriented PHP MVC with basic user registration 
 <br/>
 
 ## Origin
-The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding how the core components of this repository were put together.
+The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding for how the core components of this repository were put together.
 <br/>
 
 **fyi**, I'm tinkering with this. It's a work-in-progress and I plan to build it out a little more over time.

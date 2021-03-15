@@ -62,19 +62,20 @@
                 // No errors were found
                 if (!$hasError){
 
-                    // Assign to a variable for readability
-                    $name = $data['name'];
-                    $email = $data['email'];
-                    $password = password_hash($data['password'], PASSWORD_DEFAULT);
+                    // Hash the password
+                    $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
 
                     // Insert the new user into the database
-                    $this->userModel->userRegister($name, $email, $password);
+                    if($this->userModel->register($data)){
+                        // User was registered
+                         // Take them to the log in page
+                         // It would be better to log the user
+                         // in automatically.
+                        redirect('users/login');
+                    } else {
+                        die('Something went wrong.');
+                    }
 
-                    // User was registered
-                    // Take them to the log in page
-                     // It would be better to log the user
-                     // in automatically.
-                    $this->view('users/login', $data);
                 } else {
                     // Load view with errors
                     $this->view('users/register', $data);
