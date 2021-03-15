@@ -15,6 +15,11 @@
         // and form submission
         public function register(){
 
+            // Redirect logged in users away from page
+            if($this->isLoggedIn()) {
+                redirect('');
+            }
+
             // Check for POST
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Process the form
@@ -71,7 +76,7 @@
                          // Take them to the log in page
                          // It would be better to log the user
                          // in automatically.
-                         flash('register_success', 'Thank you for creating an account! Please log in to proceed.');
+                        flash('register_success', 'Thank you for creating an account! Please log in to proceed.');
                         redirect('users/login');
                     } else {
                         die('Something went wrong.');
@@ -104,6 +109,11 @@
         // and form submission
         public function login(){
 
+            // Redirect logged in users away from page
+            if($this->isLoggedIn()) {
+                redirect('');
+            }
+
             // Check for POST
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Process the form
@@ -127,13 +137,35 @@
                 // Validate password
                 $data['password_error'] = empty($data['password']) ? 'Please enter a password.' : (strlen($data['password']) < $this->minPasswordLength ? 'Password must be at least ' . $this->minPasswordLength . ' characters.' : '');
                 
+                // Generic error message shown if email/password is incorect
+                $genericError = 'That didn\'t work. Please check the credentials you entered.';
+
+                // Check if the user exists
+                if($this->userModel->findUserByEmail($data['email'])){
+                    // User exists
+                } else {
+                    // User does not exist
+                    $data['email_error'] = $genericError;
+                }
+
                 // Check for errors before proceeding
                 $hasError = !empty($data['email_error']);
                 $hasError = !$hasError ? !empty($data['password_error']) : $hasError;
 
                 // No errors were found
                 if (!$hasError){
-                    die('Success.');
+                    // Check and set logged in user
+                    $loggedInUser = $this->userModel->login($data['email'], $data['password']);
+
+                    if($loggedInUser){
+                        // Create session
+                        $this->createUserSession($loggedInUser);
+                    } else {
+                        $data['password_error'] = $genericError;
+
+                        // Reload with data
+                        $this->view('users/login', $data);
+                    }
                 } else {
                     // Load view with errors
                     $this->view('users/login', $data);
@@ -151,5 +183,40 @@
                 // Load view
                 $this->view('users/login', $data);
             }
+        }
+
+        // Create user session
+         // then redirect to a page using a helper function
+        public function createUserSession($user){
+            $_SESSION['user_id'] = $user->id;
+            $_SESSION['user_email'] = $user->email;
+            $_SESSION['user_name'] = $user->name;
+            redirect('');
+        }
+
+        // Log out
+         // Destroy the session
+        public function logout(){
+            unset($_SESSION['user_id']);
+            unset($_SESSION['user_email']);
+            unset($_SESSION['user_name']);
+            session_destroy();
+            redirect('users/login');
+        }
+
+        // Check if logged in
+        public function isLoggedIn(){
+            return isset($_SESSION['user_id']);
+        }
+
+        // User account
+        public function account(){
+            // Redirect to log in page if not logged in
+            if(!$this->isLoggedIn()){
+                redirect('users/login');
+            }
+
+            // Load account view
+            $this->view('users/account');
         }
     }

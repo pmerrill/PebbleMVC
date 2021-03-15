@@ -43,4 +43,21 @@
             }
         }
 
+        // Log in the user
+        public function login($email, $password){
+            $this->db->query("SELECT id, name, email, password FROM users WHERE email = :email LIMIT 1");
+            $this->db->bind(':email', $email);
+
+            // Get the row if the email exists
+            $row = $this->db->single();
+
+            $password_hash = $row->password;
+
+            if(password_verify($password, $password_hash)) {
+                return $row;
+            } else {
+                return false;
+            }
+        }
+
     }
