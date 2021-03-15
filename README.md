@@ -12,6 +12,12 @@ The core code is based on the MVC created in [Brad Traversy's Udemy course](http
 Feel free to get in touch with me [@PeteMerrill](https://twitter.com/petemerrill) on Twitter if you want to talk about this project a little more.
 <br/>
 
+## Screenshots
+![Alt text](https://i.ibb.co/vsMGsPD/Screenshot-2021-03-14-Pebble-MVC-3.png)
+![Alt](https://i.ibb.co/9cSsJGN/Screenshot-2021-03-14-Pebble-MVC-2.png)
+![Alt](https://i.ibb.co/60gTCYX/Screenshot-2021-03-14-Pebble-MVC-1.png)
+![Alt]https://i.ibb.co/bg6zwdw/Screenshot-2021-03-14-Pebble-MVC.png)
+
 ## Getting Started
 The first thing you'll want to do is to enter the correct path to your project in the **.htaccess** file (`RewriteBase`) in the **public** directory.
 <br/>
