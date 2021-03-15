@@ -2,12 +2,10 @@
 PebbleMVC is a lightweight object-oriented PHP MVC with basic user registration and authentication.
 <br/>
 
-# User Registration & Authentication
-This framework includes everything you need to set up your own website that requires user registration and authentication.
-<br/>
-
-## Themes
+## Template
 The default template uses Bootstrap 5 and Font Awesome icons.
+<br/>
+Simply remove Bootstrap and Font Awesome from the `app/views/inc/header.php` and `app/views/inc/footer.php` files. You'll also want to take a look at the navigation system in the `app/views/inc/navbar.php` file. You'll have to come up with something different if you're not going to use Bootstrap.
 <br/>
 
 ## Origin
