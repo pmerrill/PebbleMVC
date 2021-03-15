@@ -1,11 +1,23 @@
 # PebbleMVC
-A lightweight object oriented PHP MVC. The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding how the core components of this repository were put together.
+PebbleMVC is a lightweight object-oriented PHP MVC with basic user registration and authentication.
+<br/>
+
+# User Registration & Authentication
+This framework includes everything you need to set up your own website that requires user registration and authentication.
+<br/>
+
+## Themes
+The default template uses Bootstrap 5 and Font Awesome icons.
+<br/>
+
+## Origin
+The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding how the core components of this repository were put together.
 <br/>
 
 **fyi**, I'm tinkering with this. It's a work-in-progress and I plan to build it out a little more over time.
 <br/>
 
-Feel free to get in touch with me [@PeteMerrill](twitter.com/petemerrill) on Twitter if you want to talk about this project a little more.
+Feel free to get in touch with me [@PeteMerrill](https://twitter.com/petemerrill) on Twitter if you want to talk about this project a little more.
 <br/>
 
 ## Getting Started
@@ -38,6 +50,42 @@ define('DB_PASS', '_YOUR_PASSWORD_');
 define('DB_NAME', '_YOUR_DBNAME_');
 ```
 <br/>
+
+## Create User Database Table
+Create a new table called ```users``` in the database that you are using for this project.
+<br/>
+
+The table should have 5 columns.
+- **id**: int, primary key, auto increment
+- **name**: varchar(255)
+- **email**: varchar(255)
+- **password**: varchar(255)
+- **created_at**: datetime, default value should be current timestamp
+
+```SQL
+--
+-- Table structure for table `users`
+--
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+```
 
 ## Create a Model
 Create a new file in the **app/models** folder. In this example, create a file called **Post.php**.

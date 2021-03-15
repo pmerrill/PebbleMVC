@@ -1,6 +1,10 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
-
-<h1><?php echo $data['title']; ?></h1>
-<p>This is the PebbleMVC PHP framework. Please refer to the <a href="https://github.com/pmerrill/PebbleMVC" target="_blank">documentation on GitHub</a> for more information.</p>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="display-3"><?php echo $data['title']; ?></div>
+            <div class="lead"><?php echo $data['description']; ?></div>
+        </div>
+    </div>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

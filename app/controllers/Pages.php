@@ -9,7 +9,8 @@
         public function index(){
             
             $data = [
-                'title' => 'Welcome'
+                'title' => SITENAME . ' PHP Framework',
+                'description' => 'This is the ' . SITENAME . ' PHP framework. Please refer to the <a href="https://github.com/pmerrill/PebbleMVC" target="_blank">documentation on GitHub</a> for more information.',
             ];
             
             // Pass in file name and optional array of data
@@ -19,7 +20,8 @@
         // About page
         public function about(){
             $data = [
-                'title' => 'About'
+                'title' => 'About ' . SITENAME,
+                'description' => '...'
             ];
 
             // Pass in file name and optional array of data
