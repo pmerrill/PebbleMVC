@@ -71,6 +71,7 @@
                          // Take them to the log in page
                          // It would be better to log the user
                          // in automatically.
+                         flash('register_success', 'Thank you for creating an account! Please log in to proceed.');
                         redirect('users/login');
                     } else {
                         die('Something went wrong.');

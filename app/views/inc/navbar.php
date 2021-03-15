@@ -14,11 +14,10 @@
                     <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="<?php echo URLROOT; ?>" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="https://github.com/pmerrill/PebbleMVC" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="https://github.com/pmerrill/PebbleMVC" target="_blank">GitHub</a>
+                        <a class="dropdown-item" href="https://twitter.com/petemerrill" target="_blank">@PeteMerrill</a>
                     </div>
                 </li>
             </ul>
