@@ -2,16 +2,6 @@
 PebbleMVC is a lightweight object-oriented PHP MVC with basic user registration and authentication.
 <br/>
 
-## Template
-The default template uses Bootstrap 5 and Font Awesome icons.
-<br/>
-
-Simply remove Bootstrap and Font Awesome from the `app/views/inc/header.php` and `app/views/inc/footer.php` files.
-<br/>
-
-You'll also want to take a look at the navigation system in the `app/views/inc/navbar.php` file. You'll have to come up with something different if you're not going to use Bootstrap.
-<br/>
-
 ## Origin
 The core code is based on the MVC created in [Brad Traversy's Udemy course](https://www.udemy.com/course/object-oriented-php-mvc/). I highly recommend enrolling if you are new to PHP OOP, or want to get a better understanding how the core components of this repository were put together.
 <br/>
@@ -144,3 +134,17 @@ Since the model was added to the index method you'll want to open up the **app/v
 <br/>
 
 This was just an example and should give you an idea how to add your own models to this MVC.
+<br/>
+
+You could also just look at what's in the `app/models` folder to see how models get created in this framework.
+<br/>
+
+## Template
+The default template uses Bootstrap 5 and Font Awesome icons.
+<br/>
+
+Simply remove Bootstrap and Font Awesome from the `app/views/inc/header.php` and `app/views/inc/footer.php` files.
+<br/>
+
+You'll also want to take a look at the navigation system in the `app/views/inc/navbar.php` file. You'll have to come up with something different if you're not going to use Bootstrap.
+<br/>
