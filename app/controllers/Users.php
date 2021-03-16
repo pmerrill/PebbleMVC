@@ -16,7 +16,7 @@
         public function register(){
 
             // Redirect logged in users away from page
-            if($this->isLoggedIn()) {
+            if(isLoggedIn()) {
                 redirect('');
             }
 
@@ -110,7 +110,7 @@
         public function login(){
 
             // Redirect logged in users away from page
-            if($this->isLoggedIn()) {
+            if(isLoggedIn()) {
                 redirect('');
             }
 
@@ -204,15 +204,10 @@
             redirect('users/login');
         }
 
-        // Check if logged in
-        public function isLoggedIn(){
-            return isset($_SESSION['user_id']);
-        }
-
         // User account
         public function account(){
             // Redirect to log in page if not logged in
-            if(!$this->isLoggedIn()){
+            if(!isLoggedIn()){
                 redirect('users/login');
             }
 
